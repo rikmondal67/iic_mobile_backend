@@ -10,7 +10,7 @@ import errorMiddleware from "./middleware/errorMiddleware.js";
 const app = express();
 
 app.use(cors());
-app.use(express.json({ limit: "2mb" }));
+app.use(express.json());
 
 app.use("/api/team", teamRoutes);
 app.use("/api/activity", activityRoutes);
